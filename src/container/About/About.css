@@ -1,0 +1,261 @@
+.about-us {
+  color: white;
+}
+
+.vision-mission {
+  padding: 60px 0;
+  background-color: #333;
+}
+
+.vision img {
+  height: auto;
+  width: 200px;
+  float: left;
+  margin-right: 40px;
+  margin-top: 40px;
+}
+
+.mission img {
+  height: auto;
+  width: 200px;
+  float: right;
+  margin-left: 40px;
+  margin-top: 40px;
+}
+
+.vision-content {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 9px;
+}
+
+.mission-content {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.vision {
+  width: 1130px;
+  max-width: 95%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.mission {
+  width: 1130px;
+  max-width: 95%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-top: 45px;
+}
+
+.vision-content h2 {
+  color: #A5540F;
+  font-size: 30PX;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.mission-content h2 {
+  color: #A5540F;
+  font-size: 30PX;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.vision-content p {
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+  letter-spacing: 2px;
+  line-height: 20px;
+  font-size: 15px;
+  margin-bottom: 40px;
+}
+
+.mission-content p {
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+  line-height: 18px;
+  letter-spacing: 2px;
+  font-size: 15px;
+  margin-bottom: 40px;
+}
+
+/*  RESPONSIVE  FOR VISION-CONTENT AND MISSION CONTENT*/
+
+@media screen and (max-width:600px) {
+  .vision-content {
+    padding: 10px;
+  }
+
+  .vision-content h2 {
+    font-size: 24px;
+  }
+
+  .vision-content p {
+    font-size: 15px;
+    text-align: center;
+    letter-spacing: 2px;
+  }
+
+}
+
+@media screen and (max-width:600px) {
+  .mission-content {
+    padding: 10px;
+  }
+
+  .mission-content h2 {
+    font-size: 24px;
+  }
+
+  .mission-content p {
+    font-size: 15px;
+    text-align: center;
+    letter-spacing: 2px;
+  }
+
+}
+
+/*ABOUT US STATEMENT*/
+.aboutus {
+  padding: 78px 0px;
+  background-color: whitesmoke;
+  color: #333;
+  text-align: center;
+}
+
+.aboutus img {
+  height: auto;
+  max-width: 100%;
+  display: block;
+  margin: 0 auto;
+  flex: 1 0 45%;
+  max-width: 45%;
+}
+
+.about-text {
+  max-width: 600px;
+}
+
+.main {
+  width: 1130px;
+  max-width: 95%;
+  margin: 0 auto;
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.about-text {
+  margin-left: 25px;
+  flex: 1 0 45%;
+  max-width: 50%;
+}
+
+.about-text h1 {
+  color: #333;
+  font-size: 60px;
+  margin-bottom: 20px;
+  margin-top: 50px;
+}
+
+.about-text h3 {
+  color: #A5540F;
+  font-size: 30px;
+  text-transform: capitalize;
+  margin-bottom: 25px;
+  letter-spacing: 2px;
+}
+
+.about-text p {
+  color: #333;
+  font-family: 'Montserrat', sans-serif;
+  letter-spacing: 1px;
+  line-height: 30px;
+  font-size: 16px;
+  font-weight: 500;
+  margin-bottom: 1em;
+}
+
+.cta-button {
+  background-color: #eccf7c;
+  color: #A5540F;
+  text-decoration: none;
+  border: 2px solid transparent;
+  font-weight: bold;
+  padding: 13px 30px;
+  border-radius: 30px;
+  transition: .4s;
+}
+
+.cta-button:hover {
+  background: transparent;
+  border: 2px solid #A5540F;
+  cursor: pointer;
+}
+
+/* Responsive styles VISION  */
+@media (max-width: 768px) {
+  .vision img {
+    float: none;
+    margin-right: 0;
+    margin-left: 0;
+  }
+
+  .vision {
+    flex-direction: column;
+    text-align: center;
+    margin-top: 30px;
+  }
+
+}
+
+/* Responsive styles VISION  */
+@media (max-width: 768px) {
+  .mission img {
+    float: none;
+    margin-right: 0;
+    margin-left: 0;
+  }
+
+  .mission {
+    flex-direction: column;
+    text-align: center;
+    margin-top: 30px;
+  }
+}
+
+/* Responsive styles About Us */
+@media screen and (max-width: 768px) {
+  .main {
+    display: block;
+  }
+
+  .about-text {
+    max-width: 100%;
+    margin: 0;
+  }
+
+  .about-text h1 {
+    font-size: 32px;
+    text-align: center;
+  }
+
+  .about-text h3 {
+    font-size: 22px;
+    text-align: center;
+  }
+
+  .about-text p {
+    font-size: 18px;
+    margin: 20px;
+    align-content: center;
+  }
+}

@@ -1,0 +1,211 @@
+.contact {
+  position: relative;
+  min-height: 100vh;
+  padding: 50px 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5)), url('../../assets/contact.png');
+  background-size: cover;
+}
+
+.contact-content {
+  max-width: 800px;
+  text-align: center;
+}
+
+.contact-content h3 {
+  font-size: 60px;
+  font-weight: bold;
+  color: #fff;
+}
+
+.contact-content p {
+  font-size: 20px;
+  font-weight: 300;
+  color: #fff;
+}
+
+.container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+}
+
+.contactInfo {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+}
+
+.box {
+  position: relative;
+  padding: 20px 0;
+  display: flex;
+}
+
+.icon {
+  min-width: 45px;
+  height: 45px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  font-size: 20px;
+}
+
+.icon:hover {
+  color: #eccf7c;
+  transform: scale(1.2);
+  transition: transform 0.3s ease-in-out;
+}
+
+.text {
+  display: flex;
+  margin-left: 20px;
+  font-size: 16px;
+  color: #fff;
+  flex-direction: column;
+  font-weight: 300;
+}
+
+.text h4 {
+  font-weight: bold;
+  color: #A5540F;
+  font-size: 17px;
+}
+
+.contactForm {
+  width: 40%;
+  padding: 40px;
+  background: #fff;
+}
+
+.contactForm h6 {
+  font-size: 30px;
+  color: #333;
+  font-weight: 500;
+}
+
+.inputBox {
+  position: relative;
+  width: 100%;
+  margin-top: 10px;
+}
+
+.inputBox input,
+.inputBox textarea {
+  width: 100%;
+  padding: 5px 0;
+  font-size: 16px;
+  margin: 10px 0;
+  border: none;
+  border-bottom: 2px solid #333;
+  outline: none;
+  resize: none;
+}
+
+.inputBox span {
+  position: absolute;
+  left: 0;
+  padding: 5px 0;
+  font-size: 16px;
+  margin: 10px 0;
+  pointer-events: none;
+  transition: 0.5s;
+  color: #ECCF7C;
+}
+
+.inputBox input:focus~span,
+.inputBox input:valid~span,
+.inputBox textarea:focus~span,
+.inputBox input:valid~span {
+  color: #e91e63;
+  font-size: 12px;
+  transform: translateY(-20px);
+}
+
+.inputBox input[type="submit"] {
+  width: 100px;
+  background: #eccf7c;
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #A5540F;
+  transition: .4s;
+  margin-top: 50px;
+  transform: translateY(-30px);
+}
+
+.inputBox input[type="submit"]:hover {
+  background: transparent;
+  border: 1px solid #A5540F;
+  cursor: pointer;
+}
+
+/* RESPONSIVENESS */
+
+/* Adjust padding and font size for smaller screens */
+@media screen and (max-width: 991px) {
+  .contact {
+    padding: 30px;
+    /* Adjust padding for smaller screens */
+  }
+
+  .contact-content h3 {
+    font-size: 40px;
+    /* Adjust font size for smaller screens */
+  }
+}
+
+/* Further adjust layout for mobile screens */
+@media screen and (max-width: 767px) {
+  .container {
+    flex-direction: column;
+    /* Stack elements vertically */
+  }
+
+  .contactInfo,
+  .contactForm {
+    width: 100%;
+    /* Full width on smaller screens */
+    margin: 20px 0;
+    /* Add margin for separation */
+  }
+
+  .contactForm {
+    padding: 20px;
+    /* Adjust padding for smaller screens */
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .container {
+    flex-direction: column;
+    /* Stack elements vertically */
+  }
+
+  .contactInfo,
+  .contactForm {
+    width: 100%;
+    /* Full width on smaller screens */
+    margin: 10px 0;
+    /* Add margin for separation */
+  }
+
+  .contactForm {
+    padding: 10px;
+    /* Adjust padding for smaller screens */
+  }
+
+  .contact-content h3 {
+    font-size: 20px;
+    /* Adjust font size for smaller screens */
+  }
+}

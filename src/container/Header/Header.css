@@ -1,0 +1,73 @@
+.banner {
+  position: relative;
+  max-width: 100%;
+  max-height: 100vh;
+  background-image: url('../../assets/back.png');
+  background-size: cover;
+  margin-top: -30px;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+.container h1 {
+  text-transform: uppercase;
+  font-size: 40px;
+  font-weight: 800;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+span {
+  color: goldenrod;
+  margin-left: 6px;
+}
+
+/* Add responsive styles */
+
+/* Adjust font size and padding on smaller screens */
+@media screen and (max-width: 768px) {
+  .container h1 {
+    font-size: 28px;
+    padding: 15px;
+  }
+}
+
+/* Smaller font size for screens less than 800px wide */
+@media screen and (max-width: 800px) {
+  .container h1 {
+    font-size: 1.5em;
+  }
+}
+
+/* Even smaller font size for screens less than 500px wide */
+@media screen and (max-width: 500px) {
+  .container h1 {
+    font-size: 1em;
+  }
+}
+
+
+/* Center the text vertically on smaller screens */
+@media screen and (max-width: 480px) {
+  .container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .container h1 {
+    font-size: 24px;
+    padding: 10px;
+    margin: 0;
+  }
+
+}
