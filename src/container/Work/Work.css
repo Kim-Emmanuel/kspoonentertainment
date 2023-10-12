@@ -10,6 +10,13 @@
   text-align: center;
 }
 
+@media screen and (max-width: 600px) {
+  .heading h3 {
+    font-size: 35px; /* Adjust font size for small devices */
+    padding-top: 48px; /* Adjust padding for small devices */
+  }
+}
+
 .image-cards {
   display: flex;
   flex-wrap: wrap;

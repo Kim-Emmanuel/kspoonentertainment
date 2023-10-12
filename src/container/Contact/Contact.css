@@ -23,8 +23,10 @@
 
 .contact-content p {
   font-size: 20px;
-  font-weight: 300;
+  font-weight: 400;
   color: #fff;
+
+  margin-top: 20px;
 }
 
 .container {
@@ -79,6 +81,12 @@
   font-size: 17px;
 }
 
+@media screen and (max-width: 600px) {
+  .text p {
+    font-size: 13px;
+  }
+}
+
 .contactForm {
   width: 40%;
   padding: 40px;
@@ -125,7 +133,8 @@
 .inputBox textarea:focus~span,
 .inputBox input:valid~span {
   color: #e91e63;
-  font-size: 12px;
+  font-size: 13px;
+  font-weight: bold;
   transform: translateY(-20px);
 }
 
@@ -135,7 +144,7 @@
   border: none;
   cursor: pointer;
   padding: 10px;
-  font-size: 16px;
+  font-size: 17px;
   font-weight: bold;
   color: #A5540F;
   transition: .4s;
@@ -203,9 +212,11 @@
     padding: 10px;
     /* Adjust padding for smaller screens */
   }
+}
 
+@media screen and (max-width: 600px) {
   .contact-content h3 {
-    font-size: 20px;
-    /* Adjust font size for smaller screens */
+    font-size: 33px;
+    padding-top: 35px;
   }
 }

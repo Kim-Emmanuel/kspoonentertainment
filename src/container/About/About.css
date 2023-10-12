@@ -11,7 +11,7 @@
   height: auto;
   width: 200px;
   float: left;
-  margin-right: 40px;
+  margin-right: 10px;
   margin-top: 40px;
 }
 
@@ -19,7 +19,7 @@
   height: auto;
   width: 200px;
   float: right;
-  margin-left: 40px;
+  margin-left: 10px;
   margin-top: 40px;
 }
 
@@ -56,14 +56,14 @@
 
 .vision-content h2 {
   color: #A5540F;
-  font-size: 30PX;
+  font-size: 30px;
   margin-bottom: 10px;
   text-align: center;
 }
 
 .mission-content h2 {
   color: #A5540F;
-  font-size: 30PX;
+  font-size: 30px;
   margin-bottom: 10px;
   text-align: center;
 }
@@ -244,7 +244,7 @@
   }
 
   .about-text h1 {
-    font-size: 32px;
+    font-size: 46px;
     text-align: center;
   }
 

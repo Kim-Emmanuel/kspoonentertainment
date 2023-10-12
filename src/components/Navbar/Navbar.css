@@ -1,13 +1,14 @@
 .header {
   width: 100%;
   height: 64px;
+  
   display: flex;
   justify-content: space-between;
   align-items: center;
   top: 0;
   padding: 0 24px;
   background: none;
-  box-shadow: #333;
+
   backdrop-filter: blur(5px);
   -webkit-backdrop-filter: blur(5px);
   border-bottom: 1px solid #3330;
@@ -165,16 +166,6 @@
 
 /* Show the mobile menu when checkbox is checked */
 @media (max-width: 820px) {
-  .toggle_btn {
-    display: block;
-    cursor: pointer;
-    padding: 10px;
-    transition: transform 0.3s ease-in-out;
-  }
-
-  .header.sticky .menu li a {
-    color: white;
-  }
 
   /* Show the mobile menu when checkbox is checked */
   #check:checked~.menu {

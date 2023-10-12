@@ -28,7 +28,9 @@ const Events = () => {
             </div>
 
             <div className="body-container">
-              <div className="overlay-event"></div>
+              <div className="overlay-event">
+                <div className="arrow"></div>
+              </div>
 
               <div className="event-info">
                 <p className="title">{event.title}</p>
@@ -51,6 +53,7 @@ const Events = () => {
                   </p>
                 </div>
               </div>
+              
               {/* The onClick function should be replaced with a function that navigates to the desired location */}
               <a href={event.bookingUrl} className="action">Book</a>
             </div>
@@ -62,4 +65,3 @@ const Events = () => {
 };
 
 export default Events;
-

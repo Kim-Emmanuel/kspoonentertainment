@@ -12,6 +12,13 @@
   text-align: center;
 }
 
+@media screen and (max-width: 600px) {
+  .event-heading h6 {
+    font-size: 35px; /* Adjust font size for small devices */
+    padding-top: 65px; /* Adjust padding for small devices */
+  }
+}
+
 .event-container {
   width: 100%;
   display: flex;
@@ -56,8 +63,6 @@
   opacity: 0;
   transition: height linear 0.4s, opacity linear 0.2s;
 }
-
-
 
 .item-container:hover .overlay-event {
   opacity: 1;

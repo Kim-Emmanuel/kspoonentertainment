@@ -5,7 +5,7 @@ import './About.css';
 import { getAbout } from '../../lib/sanity.query';
 import { urlFor } from '../../lib/sanity.image';
 
-import {images} from '../../constants'
+import { images } from '../../constants'
 
 const About = () => {
   const [abouts, setAbouts] = useState([]);
@@ -13,7 +13,8 @@ const About = () => {
   useEffect(() => {
     AOS.init({
       duration: 1000,
-      offset: 100,
+      easing: 'ease-in-sine',
+      delay: 100,
     });
 
     const fetchData = async () => {
@@ -28,8 +29,8 @@ const About = () => {
       <div className="vision-mission">
         <div className="vision">
           <div className="main-vision">
-            <img src={images.vision} alt="vision" data-aos="fade-right" />
-            <div className="vision-content" data-aos="fade-left">
+            <img src={images.vision} alt="vision" data-aos="fade-up" />
+            <div className="vision-content" data-aos="fade-up">
               <h2>OUR VISION</h2>
               <p>
                 At KSpoon Entertainment, our goal is to establish ourselves as a premier global lifestyle and
@@ -44,8 +45,8 @@ const About = () => {
         </div>
         <div className="mission">
           <div className="main-mission">
-            <img src={images.mission} alt="mission" data-aos="fade-left" />
-            <div className="mission-content" data-aos="fade-right">
+            <img src={images.mission} alt="mission" data-aos="fade-up" />
+            <div className="mission-content" data-aos="fade-up">
               <h2>OUR MISSION</h2>
               <p>
                 Our mission is to disrupt and transform the entertainment and lifestyle sector through our creative and
