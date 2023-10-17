@@ -74,6 +74,7 @@
   letter-spacing: 2px;
   line-height: 20px;
   font-size: 15px;
+  font-weight: 500;
   margin-bottom: 40px;
 }
 
@@ -83,6 +84,7 @@
   line-height: 18px;
   letter-spacing: 2px;
   font-size: 15px;
+  font-weight: 500;
   margin-bottom: 40px;
 }
 
@@ -99,8 +101,9 @@
 
   .vision-content p {
     font-size: 15px;
+    font-weight: 700;
     text-align: center;
-    letter-spacing: 2px;
+    line-height: 21px;
   }
 
 }
@@ -117,7 +120,8 @@
   .mission-content p {
     font-size: 15px;
     text-align: center;
-    letter-spacing: 2px;
+    font-weight: 700;
+    line-height: 21px;
   }
 
 }
@@ -137,6 +141,17 @@
   margin: 0 auto;
   flex: 1 0 45%;
   max-width: 45%;
+}
+
+@media only screen and (max-width: 768px) {
+  .aboutus img {
+    height: auto;
+    max-width: 100%;
+    display: block;
+    margin: 0 auto;
+    flex: 1 0 100%;
+    max-width: 100%;
+  }
 }
 
 .about-text {
@@ -178,9 +193,9 @@
   color: #333;
   font-family: 'Montserrat', sans-serif;
   letter-spacing: 1px;
-  line-height: 30px;
+  line-height: 28px;
   font-size: 16px;
-  font-weight: 500;
+  font-weight: 600;
   margin-bottom: 1em;
 }
 
@@ -254,7 +269,9 @@
   }
 
   .about-text p {
-    font-size: 18px;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 21px;
     margin: 20px;
     align-content: center;
   }

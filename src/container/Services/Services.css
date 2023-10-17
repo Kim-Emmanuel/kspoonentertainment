@@ -26,6 +26,12 @@
     font-size: 35px; 
     padding-top: 58px; 
   }
+
+  .card p {
+    color: #333;
+    font-size: 14px;
+    font-weight: 600;
+  }
 }
 
 .line {
@@ -81,7 +87,8 @@
 
 .card p {
   color: #333;
-  font-size: 15px;
+  font-size: 16px;
+  font-weight: 600;
   line-height: 1.6;
   letter-spacing: 0.03em;
 }
@@ -124,6 +131,12 @@
   .column {
     flex: 0 50%;
     max-width: 50%;
+  }
+
+  .card p {
+    color: #333;
+    font-size: 16px;
+    font-weight: 600;
   }
 }
 
